@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="appmap.css">
+    </head>
+    <body>
+        <div id="container">
+            <div>
+                <div id="date">
+                    <p>DATE</p>
+                    <p id="date-value"><p>
+                </div>
+                <div id="main-title"><p>MEETING TIELE</p></div>
+            </div>
+            <div id="content">
+                <div id="information">
+                <div class="kv-pair"><p class="key">TIME:</p><p id="time-value">1:00 PM</p></div>
+                <div class="kv-pair"><p class="key">PLACE:</p><p id="place-value">School</p></div>
+                <div class="kv-pair"><p class="key">REASON:</p><p id="reason-value">Chat</p></div>
+                </div>
+                
+                <div id="map"></div>
+                <div style="clear:both"/>
+            </div>
+            
+            <div id="bottom">
+                <p>MESSAGES</p>
+                <form action="" methon="put">
+                <div id="inputs">
+                <div class="input"><input type="text"/></div>
+                <div class="input"><input type="text"/></div>
+                <div class="input"><input type="text"/></div>
+                </div>
+                <div id="send"><input type="button" value="SEND"></input></div>
+                </form>
+            </div>
+        </div>
+         <script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDORVoII0jEyAe_CCZhzHonky0Ns1UtiM8&callback=initMap"
+    async defer></script>
+    </body>
+
+</html>

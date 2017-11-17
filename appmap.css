@@ -1,0 +1,59 @@
+#container{
+    background-color: #ed1c24;
+    width:1000px;
+    height:600px;
+    margin:auto auto;
+    text-align:center;
+    font-family:Verdana;
+    padding:20px;
+}
+
+p{
+    font-family:Verdana;
+    font-size:22pt;
+}
+
+.kv-pair p{
+    display:inline;
+}
+
+.kv-pair{
+   margin: 20px 60px;
+}
+#main-title{
+    font-size:24pt;
+}
+
+#date{
+    position:absolute;
+    width:200px;
+    font-size:20pt;
+}
+#information,#map{
+    float:left;
+    text-align:left;
+}
+#information{
+    font-size:22pt;
+    margin-top:60px;
+    margin-left:80px;
+}
+
+#map{
+    background-color:white;
+    width:500px;
+    height:300px;
+    margin-left:40px;
+    margin-top:20px;
+}
+
+#inputs{
+    width:100%;
+    height:50px;
+    margin-left:100px;
+}
+.input{
+    float:left;
+    width:200px;
+    margin-right:100px;
+}
